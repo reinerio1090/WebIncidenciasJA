@@ -1,7 +1,15 @@
-# React + Vite 
-# javascript
+#  Web para el manejo de incidentes.
 
-Para el despliegue de esta web se necesita.
+## Web construida en react conjuntamente con tailwind para el manejo de estilos
+
+###  Sus funcionalidades son:
+
+-  Listar todos los incidentes.
+-  Listar por un rango de fecha de creación los incidentes.
+-  Listar los incidentes pendientes.
+-  Modificar un incidente, en donde  para agregarle una observación y un usuario de soporte que ha atendido el incidente( por cuestiones de tiempo e agrega un id fijo).
+
+##  Para el despliegue de esta web se necesita.
 
 Tener instalado nodeJS v.18
 
@@ -20,5 +28,8 @@ Tener instalado nodeJS v.18
   src/Controller/Controller.jsx
 
       const BASE_URL
-         
+
+-  Para mejorar la legibilidad del código se puede instalar en vsCode el comlemento:
+
+      https://marketplace.visualstudio.com/items?itemName=moalamri.inline-fold
 
