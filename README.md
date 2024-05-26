@@ -15,7 +15,7 @@ Tener instalado nodeJS v.18
   
 - En caso de ser necesario modificar la ruta de consumo de las API Rest en:
 
-**src/Controller/Controller.jsx**
+  src/Controller/Controller.jsx
 
       const BASE_URL
          
