@@ -1,4 +1,4 @@
-#Web para el manejo de incidentes. 
+#  Web para el manejo de incidentes. 
 
 Sus funcionalidades son:
 
