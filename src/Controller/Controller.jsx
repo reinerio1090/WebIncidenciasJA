@@ -1,6 +1,4 @@
 
-
-///import {  getIncidencias, getIncidenciasByFecha, getIncidenciasByEstado, createIncidencia } from "../Services/Service";
 const BASE_URL = 'http://localhost:8080/api/v1/incidencias';
 
 const getIncidencias = async () => {

@@ -35,7 +35,6 @@ const ListarIncidenciasComponent = () => {
               });
               setIsOpen(false);
               handleSearch();
-              // Aquí podrías recargar las incidencias para reflejar los cambios
           } catch (error) {
               console.error('Error updating incidencia:', error);
           }
