@@ -1,4 +1,6 @@
-#  Web para el manejo de incidentes. 
+#  Web para el manejo de incidentes.
+
+## Web construida en react conjuntamente con tailwind para el manejo de estilos
 
 ###  Sus funcionalidades son:
 
@@ -7,9 +9,7 @@
 -  Listar los incidentes pendientes.
 -  Modificar un incidente, en donde  para agregarle una observación y un usuario de soporte que ha atendido el incidente( por cuestiones de tiempo e agrega un id fijo).
 
-## Web construida en react conjuntamente con tailwind para el manejo de estilos
-
-Para el despliegue de esta web se necesita.
+##  Para el despliegue de esta web se necesita.
 
 Tener instalado nodeJS v.18
 
