@@ -39,57 +39,53 @@ const ListarIncidenciasComponent = () => {
               console.error('Error updating incidencia:', error);
           }
       }
-  };
+    };
 
-      const handleSearchByFecha = async () => {
-        try {
-          const data = await getIncidenciasByFecha(format(valueFrom, 'yyyy-MM-dd'),format(valueTo, 'yyyy-MM-dd'));
-          setIncidencias(data);
-          console.log("busFecha")
-          console.log(data);
-        } catch (error) {
-          console.error('Error searching by fecha:', error);
-          setMsgRange("Error searching by fecha");
-          setIncidencias([]);
-        }
-      };
+    const handleSearchByFecha = async () => {
+      try {
+        const data = await getIncidenciasByFecha(format(valueFrom, 'yyyy-MM-dd'),format(valueTo, 'yyyy-MM-dd'));
+        setIncidencias(data);
+        console.log("busFecha")
+        console.log(data);
+      } catch (error) {
+        setMsgRange("Error searching by fecha");
+        setIncidencias([]);
+      }
+    };
 
-      const handleSearchByEstado = async () => {
-        try {
-          const data = await getIncidenciasByEstado();
-          console.log("busEstado")
-          console.log(data);
-          setIncidencias(data);
-        } catch (error) {
-          setMsgRange("Error searching by estado:");
-          setIncidencias([]);
-        }
-      };
+    const handleSearchByEstado = async () => {
+      try {
+        const data = await getIncidenciasByEstado();
+        console.log("busEstado")
+        console.log(data);
+        setIncidencias(data);
+      } catch (error) {
+        setMsgRange("Error searching by estado:");
+        setIncidencias([]);
+      }
+    };
 
-      const handleSearchAll = async () => {
-        try {
-          const data = await getIncidencias();
-          console.log("busEstado")
-          console.log(data);
-          setIncidencias(data);
-        } catch (error) {
-          setMsgRange("Error searching all");
-          setIncidencias([]);
-        }
-      };
-
-
+    const handleSearchAll = async () => {
+      try {
+        const data = await getIncidencias();
+        console.log("busEstado")
+        console.log(data);
+        setIncidencias(data);
+      } catch (error) {
+        setMsgRange("Error searching all");
+        setIncidencias([]);
+      }
+    };
+    
     const HandleChangeEstado = (event) => {
         setEstado(event);
     }
-
     const handleSearchTypeChange = (value) => {
         setSearchType(value);
       };
     const handleChangeObservacion = (event) => {
       setvalueObservacio(event.target.value);
-    };
-      
+    };     
 
     const handleSearch = async() => {
         if (valueFrom == null || valueTo == null){
@@ -97,8 +93,6 @@ const ListarIncidenciasComponent = () => {
             setIncidencias([]);
         }else
             setMsgRange("");
-
-            console.log(valueFrom + "   " + valueTo + "   "+searchType); 
         if (msgRange === "") {                     
             if (searchType === 'fecha') {
                 await handleSearchByFecha();
@@ -107,12 +101,9 @@ const ListarIncidenciasComponent = () => {
                 await handleSearchByEstado();
               else
                 await handleSearchAll();
-            }
-              
+            }              
         }
     }
-
-    
 
     return (
         <>
@@ -150,8 +141,6 @@ const ListarIncidenciasComponent = () => {
             </div>
             </>
         )}
-
-
         <div className="">
                 <Button variant="secondary"onClick={() => handleSearch()} className="flex items-center justify-center ">
                     <span className="icon-[streamline--interface-search-circle-circle-glass-search-magnifying] w-4 h-4 mr-1"></span>
@@ -160,8 +149,6 @@ const ListarIncidenciasComponent = () => {
                 <div className='text-red-600 text-xs'>{msgRange}</div>
             </div>
         </div>
-
-
 
       <Table className="mt-5">        
         <TableHead>          
