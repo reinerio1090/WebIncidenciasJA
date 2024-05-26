@@ -1,5 +1,11 @@
-# React + Vite 
-# javascript
+#Web para el manejo de incidentes. 
+
+Sus funcionalidades son:
+
+-  Listar todos los incidentes
+-  Listar por un rango de fecha de creación los incidentes
+-  Listar los incidentes pendientes
+-  Modificar un incidente para agregarle una observación y un usuario de soporte que ha atendido el incidente( por cuestiones de tiempo Se agrega un id fijo).
 
 ## Web construida en react conjuntamente con tailwind para el manejo de estilos
 
