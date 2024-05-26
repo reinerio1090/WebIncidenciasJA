@@ -2,6 +2,9 @@
 # javascript
 
 Para el despliegue de esta web se necesita.
+
+Tener instalado nodeJS v.18
+
 1. descargar el proyecto.
 2. Instala las dependencias:
    npm install
