@@ -1,7 +1,6 @@
 # React + Vite 
 # javascript
 
-
 ## Web construida en react conjuntamente con tailwind para el manejo de estilos
 
 Para el despliegue de esta web se necesita.
@@ -24,7 +23,7 @@ Tener instalado nodeJS v.18
 
       const BASE_URL
 
--  Para mejorar la legibilidad del codigo se puede instalar en vsCode el comlemento:
+-  Para mejorar la legibilidad del código se puede instalar en vsCode el comlemento:
 
       https://marketplace.visualstudio.com/items?itemName=moalamri.inline-fold
 
